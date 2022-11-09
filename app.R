@@ -60,11 +60,11 @@ scale_colour_manual(name = "Study \n locations", values = colors)
   
 output$tbl1 <- renderTable(data %>%  filter(Study_id==input$v_study_id) %>% 
                           filter(Metadata_fields == "Dataset_description") %>% 
-                          select(Metadata_info), colnames = FALSE,  width= "90%")                 
+                          dplyr::select(Metadata_info), colnames = FALSE,  width= "90%")                 
                                            
 
 output$tbl2 <- renderTable(authors %>%  filter(Study_id==input$v_study_id) %>% 
-                             select(!Study_id),  width= "90%")        
+                             dplyr::select(!Study_id),  width= "90%")        
   
 output$tbl3 <- renderTable(data %>%  filter(Study_id==input$v_study_id) %>% 
                           filter(!Metadata_fields == "Dataset_description"),  width= "90%")   
