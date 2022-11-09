@@ -1,6 +1,7 @@
 if (!require("shiny")) { install.packages("shiny", dependencies = FALSE) ; library(shiny)}
 if (!require("shinydashboard")) { install.packages("shinydashboard", dependencies = FALSE) ; library(shinydashboard)}
-if (!require("tidyverse")) { install.packages("tidyverse", dependencies = FALSE) ; library(tidyverse)}
+if (!require("dplyr")) { install.packages("dplyr", dependencies = FALSE) ; library(dplyr)}
+if (!require("readr")) { install.packages("readr", dependencies = FALSE) ; library(readr)}
 if (!require("sf")) { install.packages("sf", dependencies = FALSE) ; library(sf)}
 
 
