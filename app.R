@@ -1,9 +1,8 @@
-library(shiny)
-library(shinydashboard)
-library(tidyverse)
-library(ggridges)
-library(giscoR)
-library(sf)
+if (!require("shiny")) { install.packages("shiny", dependencies = TRUE) ; library(shiny)}
+if (!require("shinydashboard")) { install.packages("shinydashboard", dependencies = TRUE) ; library(shinydashboard)}
+if (!require("tidyverse")) { install.packages("tidyverse", dependencies = TRUE) ; library(tidyverse)}
+if (!require("sf")) { install.packages("sf", dependencies = TRUE) ; library(sf)}
+
 
 #Read data 
 data = read_csv("Data/Metadata.csv")
