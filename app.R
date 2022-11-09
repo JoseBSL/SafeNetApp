@@ -1,15 +1,14 @@
 if (!require("shiny")) { install.packages("shiny", dependencies = FALSE) ; library(shiny)}
 if (!require("shinydashboard")) { install.packages("shinydashboard", dependencies = FALSE) ; library(shinydashboard)}
 if (!require("dplyr")) { install.packages("dplyr", dependencies = FALSE) ; library(dplyr)}
-if (!require("readr")) { install.packages("readr", dependencies = FALSE) ; library(readr)}
 if (!require("sf")) { install.packages("sf", dependencies = FALSE) ; library(sf)}
 
 
 #Read data 
-data = read_csv("Data/Metadata.csv")
+data = read.csv("Data/Metadata.csv")
 data_coord = st_read("Data/data_coord.shp") %>% 
 rename(Study_id = Study_d)
-authors = read_csv("Data/Authorship.csv")
+authors = read.csv("Data/Authorship.csv")
 
 # Get all countries and transform to the same CRS
 cntries = st_read("Data/cntries.shp")
