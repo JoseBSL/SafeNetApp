@@ -2,6 +2,7 @@ if (!require("shiny")) { install.packages("shiny", dependencies = FALSE) ; libra
 if (!require("shinydashboard")) { install.packages("shinydashboard", dependencies = FALSE) ; library(shinydashboard)}
 if (!require("dplyr")) { install.packages("dplyr", dependencies = FALSE) ; library(dplyr)}
 if (!require("sf")) { install.packages("sf", dependencies = FALSE) ; library(sf)}
+if (!require("ggplot2")) { install.packages("ggplot2", dependencies = FALSE) ; library(ggplot2)}
 
 
 #Read data 
