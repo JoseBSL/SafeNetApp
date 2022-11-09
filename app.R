@@ -1,7 +1,7 @@
-if (!require("shiny")) { install.packages("shiny", dependencies = TRUE) ; library(shiny)}
-if (!require("shinydashboard")) { install.packages("shinydashboard", dependencies = TRUE) ; library(shinydashboard)}
-if (!require("tidyverse")) { install.packages("tidyverse", dependencies = TRUE) ; library(tidyverse)}
-if (!require("sf")) { install.packages("sf", dependencies = TRUE) ; library(sf)}
+if (!require("shiny")) { install.packages("shiny", dependencies = FALSE) ; library(shiny)}
+if (!require("shinydashboard")) { install.packages("shinydashboard", dependencies = FALSE) ; library(shinydashboard)}
+if (!require("tidyverse")) { install.packages("tidyverse", dependencies = FALSE) ; library(tidyverse)}
+if (!require("sf")) { install.packages("sf", dependencies = FALSE) ; library(sf)}
 
 
 #Read data 
