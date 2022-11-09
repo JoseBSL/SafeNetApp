@@ -1,4 +1,3 @@
-if (!require("rtools")) { install.packages("rtools", dependencies = FALSE) ; library(rtools)}
 if (!require("shiny")) { install.packages("shiny", dependencies = FALSE) ; library(shiny)}
 if (!require("shinydashboard")) { install.packages("shinydashboard", dependencies = FALSE) ; library(shinydashboard)}
 if (!require("dplyr")) { install.packages("dplyr", dependencies = FALSE) ; library(dplyr)}
