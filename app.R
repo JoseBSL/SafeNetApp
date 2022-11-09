@@ -31,7 +31,7 @@ ui <- dashboardPage(
     
      h1("Dataset description"),
      tableOutput('tbl1'),
-    fluidRow(column(10,  align="center",plotOutput("plot"))),
+    fluidRow(column(12,  align="center",plotOutput("plot"))),
      h1("Authorship"),
     tableOutput('tbl2'),
      h1("Metadata"),
