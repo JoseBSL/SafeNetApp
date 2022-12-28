@@ -7,8 +7,7 @@ if (!require("ggplot2")) { install.packages("ggplot2", dependencies = FALSE) ; l
 
 #Read data 
 data = read.csv("Data/Metadata.csv")
-data_coord = st_read("Data/data_coord.shp") %>% 
-rename(Study_id = Study_d)
+data_coord = st_read("Data/data_coord.shp") 
 authors = read.csv("Data/Authorship.csv")
 
 # Get all countries and transform to the same CRS
